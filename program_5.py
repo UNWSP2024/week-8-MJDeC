@@ -3,3 +3,7 @@
 # For example a course ID could be "COS 2005" and the course name could be "Python Programming."   
 # Then ask the user for a subject (like "COS"). 
 # Finally, the program will display the ID and name of all the courses having that subject.
+def main():
+  course_ids={}
+  course_input=input("Enter a course ID")
+  course_input2=input("Enter the course name that corresponds with the ID.")
