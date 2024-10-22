@@ -18,6 +18,6 @@ def main():
     else:
       incorrect_score=incorrect_score+1
     return main
-print('Amount correct:',correct_score)
-print('Amount incorrect:',incorrect_score)
+  print('Amount correct:',correct_score)
+  print('Amount incorrect:',incorrect_score)
 main()                           
