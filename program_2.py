@@ -9,14 +9,24 @@
 
 def word_separator(sentence):
 
-    new_sentence = ""
+    new_sentence = ''
     #    Add your logic here
+    sentence=input('Enter a sentence with no spaces, but capitalize the beginning of each word.')
+    final = ''
+    final = final+new_sentence[0]
+    for i in range(1,len(sentence)):
+        char = sentence[1]
+        if char.isupper():
+            char = char.lower()
+            final = final + ' '
+        final = final + char
+        
 
     return new_sentence.strip()
 
 # Example usage
 
-sentence = "StopAndSmellTheRoses"
+#sentence = "StopAndSmellTheRoses"
 
 new_sentence = word_separator(sentence)
 
