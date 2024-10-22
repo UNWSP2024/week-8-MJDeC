@@ -6,7 +6,6 @@
 # For example the string "StopAndSmellTheRoses" would be converted to "Stop and smell the roses."
 
 # Start your changes on line 13
-
 def word_separator(sentence):
 
     new_sentence = ''
@@ -15,7 +14,7 @@ def word_separator(sentence):
     final = ''
     final = final+new_sentence[0]
     for i in range(1,len(sentence)):
-        char = sentence[1]
+        char = sentence[i]
         if char.isupper():
             char = char.lower()
             final = final + ' '
@@ -26,7 +25,7 @@ def word_separator(sentence):
 
 # Example usage
 
-#sentence = "StopAndSmellTheRoses"
+sentence = "StopAndSmellTheRoses"
 
 new_sentence = word_separator(sentence)
 
