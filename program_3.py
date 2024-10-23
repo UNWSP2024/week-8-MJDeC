@@ -19,7 +19,6 @@ def main():
     else:
       incorrect_score=incorrect_score+1
       print('Womp-womp.')
-    return main
     print('Amount correct:',correct_score)
     print('Amount incorrect:',incorrect_score)
 main()                           
