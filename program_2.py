@@ -27,4 +27,4 @@ def word_separator(sentence):
 
 new_sentence = word_separator(sentence)
 
-print(sentence[0],new_sentence,'.')
+print(sentence[0]+new_sentence+'.')
