@@ -5,7 +5,7 @@
 # Finally, the program will display the ID and name of all the courses having that subject.
 def main():
   cont='y'
-  if cont=='y':
+  while cont=='y':
     course_input1=input("Enter a subject letter tag:")
     course_input2=input("Enter a course ID number to go with the letters:")
     course_input3=input("Enter the corresponding course name:")
@@ -13,7 +13,9 @@ def main():
     cont=input("Enter y to add more course values. Enter another letter key to continue.")
   else:
     choose=input("Enter a subject to see the IDs and names for that subject.")
-    course_list=course_ids.get(choose,'No courses with that ID are entered.')
-    print(course_list)
+    if choose in course_ids:
+      print(course_ids[choose])
+    else:
+      print('No courses with that ID were entered.')
   
 main()
