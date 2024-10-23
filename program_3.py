@@ -12,12 +12,14 @@ def main():
   quiz_dictionary={'Alabama':'Montgomery','Alaska':'Juneau','Arizona':'Phoenix','Arkansas':'Little Rock','California':'Sacramento','Colorado':'Denver','Conneticut':'Hartford',
                     'Delaware':'Dover','Florida':'Tallahassee'}
   for key,value in quiz_dictionary.items():
-    guess=input('Guess the capital of this state:',key,'.')
+    guess=input('Guess the capital of this state: '+key+'.')
     if guess==value:
       correct_score=correct_score+1
+      print('Got it!')
     else:
       incorrect_score=incorrect_score+1
+      print('Womp-womp.')
     return main
-  print('Amount correct:',correct_score)
-  print('Amount incorrect:',incorrect_score)
+    print('Amount correct:',correct_score)
+    print('Amount incorrect:',incorrect_score)
 main()                           
