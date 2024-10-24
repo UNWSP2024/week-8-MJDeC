@@ -6,18 +6,25 @@
 # For example the string "StopAndSmellTheRoses" would be converted to "Stop and smell the roses."
 
 # Start your changes on line 13
-
+sentence=input('Enter a sentence with no spaces, but capitalize the beginning of each word.')
 def word_separator(sentence):
 
-    new_sentence = ""
+    new_sentence = ''
     #    Add your logic here
-
-    return new_sentence.strip()
+    #sentence=input('Enter a sentence with no spaces, but capitalize the beginning of each word.')
+    final = ''
+    for i in range(1,len(sentence)):
+        char = sentence[i]
+        if char.isupper():
+            char = char.lower()
+            final = final + ' '
+        final = final + char
+    return final.strip()
 
 # Example usage
 
-sentence = "StopAndSmellTheRoses"
+#sentence = "StopAndSmellTheRoses"
 
 new_sentence = word_separator(sentence)
 
-print(new_sentence)
+print(sentence[0]+new_sentence+'.')

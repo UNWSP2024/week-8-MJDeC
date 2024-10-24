@@ -9,6 +9,12 @@ def initials_generator(personsName):
 
     personsInitials = ""
     #    Add your logic here
+    splitname=personsName.split()
+    for string in splitname:
+        print(string[0].upper(),sep='',end='')
+        print('.',sep='',end='')
+    
+        
 
     return personsInitials.strip()
 
