@@ -9,9 +9,8 @@ def main():
     course_input1=input("Enter a subject letter tag:")
     course_input2=input("Enter a course ID number to go with the letters:")
     course_input3=input("Enter the corresponding course name:")
-    course_ids=[course_input2,course_input3]
-    if course_input1 not in course_ids:
-      course_ids[course_input1]=course_ids
+    course_ids=[]
+    course_ids['course_input1']=course_input2,course_input2
     cont=input("Enter y to add more course values. Enter another letter key to continue.")
   else:
     choose=input("Enter a subject to see the IDs and names for that subject.")
